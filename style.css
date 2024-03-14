@@ -1,0 +1,276 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+body{
+    background-color: rgb(31, 31,56);
+    font-family:Arial, Helvetica, sans-serif
+}
+.onename{
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+.hasinthaka{
+    padding-top: 40px;
+    font-size:40px;
+    font-weight:bolder;
+}
+.fullstack{
+    color:rgb(107, 105, 122);
+    padding-top: 10px;
+}
+.download{
+    color: rgb(77, 181, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 45px;
+    padding-bottom: 100px;
+    
+}
+.downloadcv,.letstalk{
+    border: 1px solid  rgb(77, 181, 255);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.letstalk{
+    background-color: rgb(77, 181, 255);
+    color: rgb(39, 39, 88);
+}
+.letstalk:hover{
+    background-color:white;
+    
+    color: black;
+}
+.downloadcv:hover{
+    background-color:white;
+    
+    color: black;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: rgb(147, 99, 132);
+    border-radius:50px ;
+    width: 350px;
+    height: 60px;
+    position: sticky;
+    top: 85%;
+    flex-wrap: wrap;
+    
+
+    
+}
+.navbar p{
+
+    padding: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+    align-items: center;
+}
+.navbar p:hover{
+    background-color: rgb(77, 181, 255);
+    
+    margin-top: 10px;
+    
+}
+.picture1{
+    width: 400px ;
+    height: 400px;
+}
+.get{
+    color: gray;
+    text-align: center;
+    padding: 20px;
+}
+.aboutme{
+    color:  rgb(77, 181, 255);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+.picture2{
+    width: 400px ;
+    height: 400px;
+
+}
+.threebox{
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    padding-right: 170px;
+    align-items: center;
+}
+.threebox p{
+    border: 1px solid rgb(44,44,108) ;
+    background-color: rgb(44,44,108);
+    height: 200px;
+    width: 170px;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+
+}
+.text{
+    color:rgb(179, 176, 176);
+    width: 100vw;
+    display:block;
+    justify-content: flex-end;
+    
+    padding-left: 580px;
+    align-items: center;
+
+}
+.text p{
+    
+    width: 600px;
+    padding: 20px;
+    font-size: 19px;
+    
+    
+
+}
+.talkbutton{
+    
+    background-color: rgb(77, 181, 255);
+    color:black;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.talkbutton:hover{
+    background-color: white;
+}
+.skill{
+text-align: center;
+padding-top: 300px;
+
+}
+.whatgray{
+    color: rgb(179, 176, 176);
+
+}
+.myblue{
+    color: rgb(77, 181, 255) ;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.twobox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.box1,.box2{
+    width: 450px;
+    justify-content: flex-start;
+    background-color: rgb(44, 44, 108);
+    border-radius: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    
+
+height: 450px;
+    
+    
+
+}
+
+.box1:hover{
+    background-color: rgb(31, 31,56) ;
+    border: 1px solid rgb(44, 44, 108);
+}
+.box2:hover{
+    background-color: rgb(31, 31,56) ;
+    border: 1px solid rgb(44, 44, 108);
+
+}
+.title{
+    color: rgb(77, 181, 255);
+    font-size: 19px;
+    font-weight: 100;
+    width: 400px;
+    text-align: center;
+    padding: 40px;
+    
+}
+.box1 p,.box2 p{
+    color: white;
+    padding-left: 70px;
+    width: 200px;
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+.br{
+    color: rgb(179, 176, 176) ;
+    width: 200px;
+}
+.offerserv{
+    width: 100vw;
+    text-align: center;
+    padding: 50px;
+
+}
+.offer{
+    color: rgb(179, 176, 176);
+    padding: 10px;
+}
+.serv{
+    color: rgb(77, 181, 255);
+    padding-bottom: 40px;
+    font-size: 25px;
+    
+
+}
