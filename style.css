@@ -2,486 +2,598 @@
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
-  }
-  
-  /* Preferred box-sizing value */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  /*
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
     Remove list styles (bullets/numbers)
     in case you use it with normalize.css
   */
-  ol, ul {
-    list-style: none;
-  }
-  
-  /* For images to not be able to exceed their container */
-  img {
-    max-width: 100%;
-  }
-  
-  /* Removes spacing between cells in tables */
-  table {
-    border-collapse: collapse;
-  }
-  
-  /* Revert the 'white-space' property for textarea elements on Safari */
-  textarea {
-    white-space: revert;
-  }
-
-body{
-    background-color: rgb(31, 31,56);
-    font-family:Arial, Helvetica, sans-serif
-}
-.onename{
-    color: white;
-    text-align: center;
-    padding-top: 150px;
-}
-.hasinthaka{
-    padding-top: 40px;
-    font-size:40px;
-    font-weight:bolder;
-}
-.fullstack{
-    color:rgb(107, 105, 122);
-    padding-top: 10px;
-}
-.download{
-    color: rgb(77, 181, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 45px;
-    padding-bottom: 100px;
-    
-}
-.downloadcv,.letstalk{
-    border: 1px solid  rgb(77, 181, 255);
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.letstalk{
-    background-color: rgb(77, 181, 255);
-    color: rgb(39, 39, 88);
-}
-.letstalk:hover{
-    background-color:white;
-    cursor: pointer;
-    color: black;
-}
-.downloadcv:hover{
-    background-color:white;
-    cursor: pointer;
-    color: black;
-}
-.navbar{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
-    background-color: rgb(147, 99, 132);
-    border-radius:50px ;
-    width: 350px;
-    height: 60px;
-    position: sticky;
-    top: 85%;
-    flex-wrap: wrap;
-    
-
-    
-}
-.navbar p{
-
-    padding: 20px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    
-    align-items: center;
-}
-.navbar p:hover{
-    background-color: rgb(77, 181, 255);
-    cursor: pointer;
-    margin-top: 10px;
-    
-}
-.picture1{
-    width: 400px ;
-    height: 400px;
-}
-.get{
-    color: gray;
-    text-align: center;
-    padding: 20px;
-}
-.aboutme{
-    color:  rgb(77, 181, 255);
-    text-align: center;
-    padding: 20px;
-    font-size: 25px;
-}
-.picture2{
-    width: 400px ;
-    height: 400px;
-
-}
-.threebox{
-    color: white;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-    padding-right: 50%;
-    align-items: center;
-}
-.threebox p{
-    border: 1px solid rgb(44,44,108) ;
-    background-color: rgb(44,44,108);
-    height: 180px;
-    width: 170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    margin: 15px;
-    border-radius: 15px;
-    
-
-}
-.text{
-    color:rgb(179, 176, 176);
-    width: 50%;
-    padding-left:560px;
-    justify-content: flex-end;
-    
-    
-    align-items: center;
-
-}
-.text p{
-    
-    width: 600px;
-    padding: 20px;
-    font-size: 19px;
-    
-    
-
-}
-.talkbutton{
-    
-    background-color: rgb(77, 181, 255);
-    color:black;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-.talkbutton:hover{
-    background-color: white;
-    cursor: pointer;
-}
-.skill{
-text-align: center;
-padding-top: 300px;
-
-}
-.whatgray{
-    color: rgb(179, 176, 176);
-
-}
-.myblue{
-    color: rgb(77, 181, 255) ;
-    font-size: 30px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-.twobox{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-.box1,.box2{
-    width: 500px;
-    justify-content: flex-start;
-    background-color: rgb(44, 44, 108);
-    border-radius: 30px;
-    display:flex;
-    flex-wrap: wrap;
-    
-
-height: 450px;
-    
-    
-
+ol,
+ul {
+  list-style: none;
 }
 
-
-
-.box1:hover{
-    background-color: rgb(31, 31,56) ;
-    border: 1px solid rgb(44, 44, 108);
-    cursor: pointer;
-}
-.box2:hover{
-    background-color: rgb(31, 31,56) ;
-    border: 1px solid rgb(44, 44, 108);
-    cursor: pointer;
-
-}
-.title{
-    color: rgb(77, 181, 255);
-    font-size: 19px;
-    font-weight: 100;
-    width: 400px;
-    text-align: center;
-    padding: 40px;
-    
-}
-.ac,.as{
-    color: white;
-    padding-left: 70px;
-    width: 200px;
-    font-size: 19px;
-    padding-bottom: 15px;
-}
-.gray{
-    color: gray;
-}
-.br{
-    color: rgb(179, 176, 176) ;
-    width: 200px;
-}
-.offerserv{
-    width: 100vw;
-    text-align: center;
-    padding-top: 30px;
-
-}
-.offer{
-    color: rgb(179, 176, 176);
-    padding: 10px;
-}
-.serv{
-    color: rgb(77, 181, 255);
-    padding-bottom: 5px;
-    font-size: 25px;
-    
-
-}
-.threeboxes{
-    width: 100xw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    
-    
-    
-
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
 }
 
-.firstbox,.secondbox,.thirdbox{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border: 1px solid  rgb(77, 181, 255);
-    height: 400px;
-    background-color: rgb(44, 44, 108);
-    width: 310px;
-    
-    margin: 16px;
-
-}
-.thirdbox{
-    height: 330px !important;
-    margin-bottom: 85px;
-}
-.firstbox h1,.secondbox h1,.thirdbox h1{
-    text-align: center;
-    font-size: 18px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 40px;
-    color:rgb(44, 44, 108) ;
-    background-color:  rgb(77, 181, 255);
-}
-.firstbox p,.secondbox p,.thirdbox p{
-    justify-content: flex-start;
-    color: white;
-    padding-top: 32px;
-    padding-left: 32px;
-    
-}
-.firstbox:hover{
-    background-color:rgb(31, 31,56) ;
-}
-.secondbox:hover{
-    background-color: rgb(31, 31,56);
-}
-.thirdbox:hover{
-    background-color: rgb(31, 31,56);
-}
-.myport{
-
-    text-align: center;
-    padding: 50px;
-    margin-top: 100px;
-}
-.blue{
-    color:rgb(77, 181, 255) ;
-    font-size: 23px;
-    padding: 10px;
-    font-weight: 300;
-}
-.gray{
-    color: gray;
-}
-.threecboxes{
-    width: 100xw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    
-    
-
-}
-.firstcbox,.secondcbox,.thirdcbox{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border: 1px solid  rgb(77, 181, 255);
-    height: 400px;
-    background-color: rgb(44, 44, 108);
-    width: 310px;
-    border-radius: 30px;
-    margin: 16px;
-    padding: 1.3rem;
-
-}
-.thirdcbox:hover{
-    background-color:rgb(31, 31,56) ;
-
-}
-.firstcbox:hover{
-    background-color:rgb(31, 31,56) ;
-
-}
-.secondcbox:hover{
-    background-color:rgb(31, 31,56) ;
-
-}
-.img{
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    
-}
-.noapp{
-    color: white;
-    font-size: 19px;
-    font-weight:bold;
-    padding-left: 4px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-.gitdemo{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    gap: 10px;
-
-}
-.github{
-    color:  rgb(77, 181, 255);
-    border: 1px solid  rgb(77, 181, 255);
-    padding: 15px;
-    border-radius: 5px;
-}
-.livedemo{
-    color: rgb(44, 44, 108);
-    background-color:rgb(77, 181, 255) ;
-    padding: 15px;
-    width: 120px;
-    
-    border-radius: 5px;
-}
-.github:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-}
-.livedemo:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
 }
 
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
 
-.retest{
-    width: 100vw;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 40px;
-    margin-top: 100px;
+body {
+  background-color: rgb(31, 31, 56);
+  font-family: Arial, Helvetica, sans-serif;
 }
-.wrapper{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.onename {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
 }
-.bluebox{
-    height:200px;
-    width: 40%;
-    
-    border-radius: 30px;
-     margin-bottom: 100px;
-    
-    background-color: rgb(44, 44, 108);
+.hasinthaka {
+  padding-top: 40px;
+  font-size: 40px;
+  font-weight: bolder;
 }
-.user{
-    
-    width: 50px;
-    height: 50px;
-    margin-left: 50%;
-    margin-top: 30px;
-    text-align: center;
-    
-    
-    
+.fullstack {
+  color: rgb(107, 105, 122);
+  padding-top: 10px;
 }
-.no{
-    color: white;
-    font-weight: 200;
-    padding: 20px;
-    text-align: center;
+.download {
+  color: rgb(77, 181, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 45px;
+  padding-bottom: 100px;
 }
-.comment{
-    color: gray;
-    text-align: center;
-    padding: 5px;
+.downloadcv,
+.letstalk {
+  border: 1px solid rgb(77, 181, 255);
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 16px;
 }
-.getme{
-    width: 100vw;
-    text-align: center;
-    margin-bottom: 30px;
+.letstalk {
+  background-color: rgb(77, 181, 255);
+  color: rgb(39, 39, 88);
+}
+.letstalk:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.downloadcv:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  background-color: rgb(147, 99, 132);
+  border-radius: 50px;
+  width: 350px;
+  height: 60px;
+  position: sticky;
+  top: 85%;
+  flex-wrap: wrap;
+}
+.navbar p {
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  align-items: center;
+}
+.navbar p:hover {
+  background-color: rgb(77, 181, 255);
+  cursor: pointer;
+  margin-top: 10px;
+}
+.picture1 {
+  width: 100vw;
+
+  display: block;
+  object-fit: cover;
+  text-align: center;
+  margin-bottom: 100px;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.get {
+  color: gray;
+  text-align: center;
+  padding: 20px;
+}
+.aboutme {
+  color: rgb(77, 181, 255);
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+.pictext {
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.picture2 {
+  width: 400px;
+  height: 400px;
+}
+.threebox {
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  padding-right: 50%;
+  align-items: center;
+}
+.threebox p {
+  border: 1px solid rgb(44, 44, 108);
+  background-color: rgb(44, 44, 108);
+  height: 180px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 15px;
+  border-radius: 15px;
+}
+.threebox p:hover {
+  background-color: rgb(31, 31, 56);
+}
+.text {
+  color: rgb(179, 176, 176);
+  width: 50%;
+  padding-left: 560px;
+  justify-content: flex-end;
+
+  align-items: center;
+}
+.text p {
+  width: 600px;
+  padding: 20px;
+  font-size: 19px;
+}
+.talkbutton {
+  background-color: rgb(77, 181, 255);
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.talkbutton:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.skill {
+  text-align: center;
+  padding-top: 300px;
+}
+.whatgray {
+  color: rgb(179, 176, 176);
+}
+.myblue {
+  color: rgb(77, 181, 255);
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.twobox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.box1,
+.box2 {
+  width: 500px;
+  justify-content: flex-start;
+  background-color: rgb(44, 44, 108);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 450px;
+}
+
+.box1:hover {
+  background-color: rgb(31, 31, 56);
+  border: 1px solid rgb(44, 44, 108);
+  cursor: pointer;
+}
+.box2:hover {
+  background-color: rgb(31, 31, 56);
+  border: 1px solid rgb(44, 44, 108);
+  cursor: pointer;
+}
+.title {
+  color: rgb(77, 181, 255);
+  font-size: 19px;
+  font-weight: 100;
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+}
+.ac,
+.as {
+  color: white;
+  padding-left: 70px;
+  width: 200px;
+  font-size: 19px;
+}
+.gray {
+  color: gray;
+}
+.br {
+  color: rgb(179, 176, 176);
+  width: 200px;
+}
+.offerserv {
+  width: 100vw;
+  text-align: center;
+  padding-top: 30px;
+}
+.offer {
+  color: rgb(179, 176, 176);
+  padding: 10px;
+}
+.serv {
+  color: rgb(77, 181, 255);
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+.threeboxes {
+  width: 100xw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.firstbox,
+.secondbox,
+.thirdbox {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 1px solid rgb(77, 181, 255);
+  height: 400px;
+  background-color: rgb(44, 44, 108);
+  width: 310px;
+
+  margin: 16px;
+}
+.thirdbox {
+  height: 330px !important;
+  margin-bottom: 85px;
+}
+.firstbox h1,
+.secondbox h1,
+.thirdbox h1 {
+  text-align: center;
+  font-size: 18px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 40px;
+  color: rgb(44, 44, 108);
+  background-color: rgb(77, 181, 255);
+}
+.firstbox p,
+.secondbox p,
+.thirdbox p {
+  justify-content: flex-start;
+  color: white;
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.firstbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.secondbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.thirdbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.myport {
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+.blue {
+  color: rgb(77, 181, 255);
+  font-size: 23px;
+  padding: 10px;
+  font-weight: 500;
+}
+.gray {
+  color: gray;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: block;
+}
+.threecboxes {
+  width: 100xw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.firstcbox,
+.secondcbox,
+.thirdcbox {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 1px solid rgb(77, 181, 255);
+  height: 400px;
+  background-color: rgb(44, 44, 108);
+  width: 310px;
+  border-radius: 30px;
+  margin: 16px;
+  padding: 1.3rem;
+}
+.thirdcbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.firstcbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.secondcbox:hover {
+  background-color: rgb(31, 31, 56);
+}
+.img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.noapp {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.gitdemo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.github {
+  color: rgb(77, 181, 255);
+  border: 1px solid rgb(77, 181, 255);
+  padding: 15px;
+  border-radius: 5px;
+}
+.livedemo {
+  color: rgb(44, 44, 108);
+  background-color: rgb(77, 181, 255);
+  padding: 15px;
+  width: 120px;
+
+  border-radius: 5px;
+}
+.github:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.livedemo:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.retest {
+  width: 100vw;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bluebox {
+  height: 200px;
+  width: 40%;
+
+  border-radius: 30px;
+  margin-bottom: 100px;
+
+  background-color: rgb(44, 44, 108);
+}
+.user {
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+  margin-top: 30px;
+  text-align: center;
+}
+.no {
+  color: white;
+  font-weight: 200;
+  padding: 10px;
+  text-align: center;
+}
+.comment {
+  color: gray;
+  text-align: center;
+  padding: 5px;
+}
+.getme {
+  width: 100vw;
+  text-align: center;
+}
+.lastbox {
+  display: flex;
+  justify-content: center;
+
+  gap: 100px;
+}
+.boxes p {
+  padding: 5px;
+}
+.boxes {
+  justify-content: flex-start;
+}
+
+.boxmail,
+.boxmsg,
+.whatsapp {
+  background-color: rgb(44, 44, 108);
+  color: white;
+
+  margin: 20px;
+
+  font-size: 14px;
+  border: 1px solid rgb(44, 44, 108);
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  text-align: center;
+}
+.boxmail:hover {
+  background-color: rgb(31, 31, 56);
+}
+.boxmsg:hover {
+  background-color: rgb(31, 31, 56);
+}
+.whatsapp:hover {
+  background-color: rgb(31, 31, 56);
+}
+.bluegray {
+  color: rgb(77, 181, 255);
+}
+.bluegray:hover {
+  color: gray;
+}
+.form {
+  margin-top: 20px;
+}
+.fullname {
+  border: 1px solid rgb(44, 44, 108);
+  width: 400px;
+
+  border-radius: 0.5rem;
+  margin: 10px;
+  padding: 1.5rem;
+}
+.textarea {
+  border: 1px solid rgb(44, 44, 108);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  height: 150px;
+  width: 400px;
+  margin: 10px;
+}
+.submit {
+  background-color: rgb(77, 181, 255);
+  color: rgb(44, 44, 108);
+  border-radius: 0.5rem;
+
+  padding: 15px;
+  margin: 10px;
+}
+.submit:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.footer {
+  background: rgb(77, 181, 255);
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+.hname {
+  display: inline;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: rgb(44, 44, 108);
+  font-size: 17px;
+}
+.hname:hover {
+  color: white;
+  cursor: pointer;
+}
+.longtext {
+  color: white;
+  padding: 20px;
+}
+.shortbar p:hover {
+  color: white;
+  cursor: pointer;
+}
+.shortbar {
+  display: flex;
+  justify-content: center;
+  color: rgb(44, 44, 108);
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  padding: 10px;
+  font-weight: 500;
+}
+.threebar {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  color: white;
+}
+.threebar p {
+  background-color: rgb(31, 31, 56);
+  padding: 15px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+  display: block;
+  border: 1px solid rgb(31, 31, 56);
+}
+.threebar p:hover {
+  background-color: rgb(77, 181, 255);
+  color: black;
+  cursor: pointer;
 }
